@@ -26,6 +26,8 @@ Document at least 3 bugs you found. Add rows as needed.
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
 
+The AI tools that were utilized for the project was Claude Code. One example of a correct AI suggestion was when I allowed it to move and refactor the check_guess() function. AI suggested what instructions I gave to it in the prompt where I was concrete and descriptive enough. I verified the result by looking it over and tracing edge cases or normal cases. One example of a misleading AI suggestion was to know create tests for that function. In theory it seemed fair but when put into action it was incorrect. There was a issue with function imports. So once that was squared away, it was good to go.
+
 ---
 
 ## 3. Debugging and testing your fixes
@@ -34,6 +36,8 @@ Document at least 3 bugs you found. Add rows as needed.
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
 - Did AI help you design or understand any tests? How?
+
+That said bug where it tested check_guess() function used a pytest. The pytest contained different cases each with different scenarios. The AI helped created that for me and I verified its result.
 
 ---
 
