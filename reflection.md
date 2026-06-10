@@ -6,17 +6,17 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 - What did the game look like the first time you ran it?
 - List at least two concrete bugs you noticed at the start  
-  (for example: "the hints were backwards").
+   (for example: "the hints were backwards").
 
-**Bug Reproduction Log**
+  **Bug Reproduction Log**
 
 Document at least 3 bugs you found. Add rows as needed.
 
-| Input | Expected Behavior | Actual Behavior | Console Output / Error |
-|-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+| Input                              | Expected Behavior                                                                          | Actual Behavior                                                                                                                                                               | Console Output / Error                                          |
+| ---------------------------------- | ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| Switching difficulties during game | Secret number, attempts, and score should reset and reflect the new difficulty's range     | The state of the game stays. Secret number is the same. Difficulty levels behave the same.                                                                                    | No error is outputted. State is same across all difficulties    |
+| Starting a new game to restart     | Current game state should be deleted such as history, cleared message, and input is fresh. | Message that start a new game pop up multiple times, history is still there, and game is frozen.                                                                              | Error message: "Game over. Start a new game to try again."      |
+| Playing through 1 session of game  | Possible I will correctly answer with right guess given number of attempts                 | System guides me closer to guess but once I reach the end of range, tells me to go back. Once out of attempts, the correct guess is a number that I was not getting close to. | Error message: "Out of attempts! The secret was 17. Score: -15" |
 
 ---
 
